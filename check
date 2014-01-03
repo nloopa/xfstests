@@ -210,6 +210,9 @@ while [ $# -gt 0 ]; do
 	-nfs)	FSTYP=nfs ;;
 	-tmpfs)	FSTYP=tmpfs ;;
 
+	-reiserfs)
+		FSTYP=reiserfs ;;
+
 	-g)	group=$2 ; shift ;
 		GROUP_LIST="$GROUP_LIST $group"
 		;;
